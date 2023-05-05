@@ -1,0 +1,26 @@
+:root {
+    --primary-red: #f25c54;
+    --secondary-red: #d90429;
+    --primary-white: #f1faee;
+    --secondray-white: #e7ecee;
+    --dark-gray: #4b4b4b;
+    --light-gray: #969393;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+html, body {
+    width: 100vw;
+    position: relative;
+}

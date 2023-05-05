@@ -1,0 +1,64 @@
+.navbar {
+    z-index: 99;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: var(--primary-red);
+    position: sticky;
+    top: 0;
+    color: #f1faee;
+    .container {
+        height: 3.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        max-width: 1440px;
+        padding: 0 1rem;
+        .logo {
+            font-family: 'Satisfy';
+            font-size: clamp(1.75rem, 5vw ,2rem);
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .navigation {
+            list-style-type: none;
+            display: flex;
+            gap: 1.25rem;
+            li {
+                font-size: clamp(1rem, 3vw, 1.25rem);
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    transform: translateY(-0.15rem);
+                }
+            }
+        }
+
+        .cart_icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .navbar {
+        .container {
+            .navigation {
+                display: none;
+            }
+
+            .mobile {
+                display: flex;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.banner_container {
+    width: 100vw;
+    background: var(--primary-red); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100vw;
+    max-width: 1440px;
+    height: clamp(12.5rem, 30vw, 30rem);
+    position: relative;
+
+    .left {
+    font-size: 3rem;
+    font-family: 'Satisfy';
+    flex: 1;
+    z-index: 6;
+    padding-left: clamp(2rem, 5vw, 7rem);
+
+    h2 {
+        color: var(--primary-white);
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: clamp(1.25rem, 5vw, 3.5rem);
+        
+        :first-child {
+            font-family: 'Satisfy';
+            margin-left: clamp(0.5rem, 5vw, 5rem);
+
+        }
+
+        :last-child {
+            font-family: 'Satisfy';
+        }
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: var(--primary-white);
+        margin-left: 5rem;
+        font-weight: 600;
+
+    }
+}
+
+    .right {
+    height: 100%;
+    position: absolute;
+    flex: 1;
+    right: clamp(0rem, 5vw, 15rem);
+    z-index: 4;
+
+    img {
+        height: 100%;
+    }
+}
+}
+}

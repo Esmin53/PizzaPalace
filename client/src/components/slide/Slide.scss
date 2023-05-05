@@ -1,0 +1,10 @@
+.slide {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 98;
+    
+    .slide-container {
+        width: 1440px;
+    }
+}

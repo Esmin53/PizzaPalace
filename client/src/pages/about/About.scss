@@ -1,0 +1,243 @@
+.about {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    .container {
+        width: 100vw;
+        max-width: 1440px;
+        padding: 1rem 0rem;
+        overflow: hidden;
+
+        .about_banner {
+            .top {
+                width: 100%;
+                height: clamp(10rem, 25vw,25rem);
+                border-radius: 1rem;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: clamp(1rem, 5vw, 10rem);
+
+                h2 {
+                    position: relative;
+                    z-index: 6;
+                    color: var(--primary-red);
+                    font-size: clamp(1.75rem, 5vw, 3rem);
+                    font-family: "Satisfy";
+                    margin-top: -4vw;
+                }
+
+                p {
+                    position: relative;
+                    z-index: 6;
+                    color: var(--primary-white);
+                    font-size: clamp(0.75rem, 5vw, 1.15rem);
+                    width: clamp(2rem ,100%, 21rem);
+                    text-align: center;
+                    font-weight: 600;
+
+                    span {
+                        font-family: "Satisfy";
+                        font-size: clamp(0.78rem, 5vw, 1.25rem);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    padding: auto;
+                    top: 0;
+                    left: 0;
+                    z-index: 4;
+                    position: absolute;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: -3vw;
+                flex-wrap: wrap;
+
+                div {
+                    width: clamp(5.5rem, 17vw,17rem);
+                    height: clamp(5.5rem, 17vw,17rem);
+                    border-radius: 1rem;
+                    position: relative;
+                    overflow: hidden;
+                    margin-top: -1.5rem;
+
+                    h2 {
+                        z-index: 6;
+                        position: relative;
+                        font-family: "Satisfy";
+                        color: var(--primary-white);
+                        font-size: clamp(1rem, 3vw, 1.75rem);
+                        padding: 0.5rem;
+                    }
+
+                    img {
+                        z-index: 5;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 2rem 0;
+
+            span {
+                font-size: clamp(0.8rem, 4vw, 1.25rem);
+                font-weight: 600;
+                color: var(--light-gray);
+            }
+
+            h1 {
+                font-family: "Satisfy";
+                font-weight: 600;
+                color: var(--primary-red);
+                font-size: clamp(1.25rem, 5vw, 2.75rem);
+            }
+
+            p {
+                width: clamp(1rem, 100vw, 75% );
+                text-align: center;
+                font-size: clamp(0.9rem, 3vw, 1.35rem);
+                font-weight: 500;
+                word-spacing: 0.1rem;
+            }
+        }
+
+        hr { 
+            height: 0;
+            border: solid 1.5px var(--light-gray);
+            margin: 1rem;
+        }
+
+        .collage_container {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5vw;
+
+        .collage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            width: 50%;
+
+            .first {
+                width: clamp(5.5rem, 15vw,15rem);
+                height: clamp(6.5rem, 17vw, 17rem);
+                margin-bottom: -10vw;
+                margin-right: -30vw;
+                border-radius: 0.5rem;
+                overflow: hidden;
+                background-color: rebeccapurple;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .second {
+                width: clamp(10.5rem, 25vw, 25rem);
+                height: clamp(13rem, 30vw, 30rem);
+                border-radius: 0.5rem;
+                z-index: 6;
+                overflow: hidden;
+                background-color: darkcyan;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .third {
+                width: clamp(7rem, 18vw, 18rem);
+                height: clamp(7rem, 18vw, 18rem);
+                margin-top: -10vw;
+                margin-right: -27.5vw;
+                border-radius: 0.5rem;
+                z-index: 5;
+                overflow: hidden;
+                background-color: tan;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+
+        .info {
+            width: clamp(27.5rem, 35vw, 35rem);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border-radius: 0.5rem;
+            
+            h1 {
+                font-size: clamp(1.25rem, 4vw, 2.5rem);
+            }
+
+            p {
+                font-size: clamp(0.9rem, 3vw, 1.35rem);
+            }
+        }
+    
+    }
+}
+}
+
+@media only screen and (max-width: 660px) {
+    .about {
+        .container {
+            .about_banner {
+                .top {
+                    border-radius: 0;
+                }
+            }
+            .collage_container { 
+                .collage {
+                    margin-left: -2.5rem;
+                    .first {
+                        margin-right: -9.5rem;
+                    }
+
+                    .third {
+                        margin-right: -9.5rem;
+                    }
+                }
+            
+                .info {
+                    width: 100vw;
+                }
+            }
+        }
+    }
+}
